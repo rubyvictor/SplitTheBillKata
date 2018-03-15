@@ -10,9 +10,9 @@ function splitTheBill(x) {
       length++;
     }
   }
-  let avg = sum / length;
-  console.log(sum, length);
-  console.log(avg);
+  let avg = parseFloat(sum).toFixed(2) / parseFloat(length).toFixed(2);
+  console.log("sum:"+sum, "length:"+length);
+  console.log("avg="+avg);
 
   for (let key in x) {
     x[key] = x[key] - avg;
